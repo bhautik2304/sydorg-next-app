@@ -1,73 +1,143 @@
 "use client"
 import React from 'react';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+
 function TestimonialSlider() {
 
     return (
         <>
-            <OwlCarousel
-                className='owl-theme'
-                loop
-                margin={10}
-                nav
-                responsive={{
+            <Swiper
+                // className='owl-theme'
+                loop={true}
+                modules={[Navigation]}
+                spaceBetween={50}
+                breakpoints={{
                     400: {
-                        items: 1
+                        slidesPerView: 1
                     },
                     768: {
-                        items: 2
+                        slidesPerView: 2
                     },
                     992: {
-                        items: 3
+                        slidesPerView: 3
                     },
                 }}
+                className="mySwiper"
             >
-                <div className="slider-card" style={{
-                    // height:250
-                }} >
-                    <div className='row' >
-                        <div className="col-4" >
-                            <img src="./images/img1.jpg" alt="" />
-                        </div>
-                        <div className="col-8 content text-left">
-                            <p style={{
-                                textAlign: 'left'
-                            }} >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae
-                                animi nihil minus sed unde voluptas cumque.</p>
-                            <b style={{
-                                textAlign: 'left'
-                            }} className="d-block title">Briana Tozour</b>
-                            <small style={{
-                                textAlign: 'left'
-                            }} className="d-block sub-title mb-2">Graphic Designer</small>
-                        </div>
-                    </div>
-                </div>
-                <div className="slider-card" style={{
-                    // height:250
-                }} >
-                    <div className='row' >
-                        <div className="col-4" >
-                            <img src="./images/img1.jpg" alt="" />
-                        </div>
-                        <div className="col-8 content text-left">
-                            <p style={{
-                                textAlign: 'left'
-                            }} >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae
-                                animi nihil minus sed unde voluptas cumque.</p>
-                            <b style={{
-                                textAlign: 'left'
-                            }} className="d-block title">Briana Tozour</b>
-                            <small style={{
-                                textAlign: 'left'
-                            }} className="d-block sub-title mb-2">Graphic Designer</small>
+                <SwiperSlide>
+                    <div className="slider-card bg-light p-3" style={{
+                        borderTopRightRadius:40,
+                        borderTopLeftRadius:10,
+                        borderBottomLeftRadius:40,
+                        borderLeftLeftRadius:10,
+                    }} >
+                        <div className='row' >
+                            <div className="col-4" >
+                                <img src="./images/img1.jpg" alt="" />
+                            </div>
+                            <div className="col-8 content text-left">
+                                <p style={{
+                                    textAlign: 'left'
+                                }} >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae
+                                    animi nihil minus sed unde voluptas cumque.</p>
+                                <b style={{
+                                    textAlign: 'left'
+                                }} className="d-block title">Briana Tozour</b>
+                                <small style={{
+                                    textAlign: 'left'
+                                }} className="d-block sub-title mb-2">Graphic Designer</small>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="slider-card bg-light p-3" style={{
+                        borderTopRightRadius:40,
+                        borderTopLeftRadius:10,
+                        borderBottomLeftRadius:40,
+                        borderLeftLeftRadius:10,
+                    }} >
+                        <div className='row' >
+                            <div className="col-4" >
+                                <img src="./images/img1.jpg" alt="" />
+                            </div>
+                            <div className="col-8 content text-left">
+                                <p style={{
+                                    textAlign: 'left'
+                                }} >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae
+                                    animi nihil minus sed unde voluptas cumque.</p>
+                                <b style={{
+                                    textAlign: 'left'
+                                }} className="d-block title">Briana Tozour</b>
+                                <small style={{
+                                    textAlign: 'left'
+                                }} className="d-block sub-title mb-2">Graphic Designer</small>
+                            </div>
+                        </div>
+                    </div>
 
-            </OwlCarousel>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="slider-card bg-light p-3" style={{
+                        borderTopRightRadius:40,
+                        borderTopLeftRadius:10,
+                        borderBottomLeftRadius:40,
+                        borderLeftLeftRadius:10,
+                    }} >
+                        <div className='row' >
+                            <div className="col-4" >
+                                <img src="./images/img1.jpg" alt="" />
+                            </div>
+                            <div className="col-8 content text-left">
+                                <p style={{
+                                    textAlign: 'left'
+                                }} >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae
+                                    animi nihil minus sed unde voluptas cumque.</p>
+                                <b style={{
+                                    textAlign: 'left'
+                                }} className="d-block title">Briana Tozour</b>
+                                <small style={{
+                                    textAlign: 'left'
+                                }} className="d-block sub-title mb-2">Graphic Designer</small>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="slider-card bg-light p-3" style={{
+                        borderTopRightRadius:40,
+                        borderTopLeftRadius:10,
+                        borderBottomLeftRadius:40,
+                        borderLeftLeftRadius:10,
+                    }} >
+                        <div className='row' >
+                            <div className="col-4" >
+                                <img src="./images/img1.jpg" alt="" />
+                            </div>
+                            <div className="col-8 content text-left">
+                                <p style={{
+                                    textAlign: 'left'
+                                }} >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae
+                                    animi nihil minus sed unde voluptas cumque.</p>
+                                <b style={{
+                                    textAlign: 'left'
+                                }} className="d-block title">Briana Tozour</b>
+                                <small style={{
+                                    textAlign: 'left'
+                                }} className="d-block sub-title mb-2">Graphic Designer</small>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+            </Swiper>
         </>
     )
 }
