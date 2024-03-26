@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <div className="hero text-white" style={{ backgroundImage: 'url("./images/home-hero.jpg")' }}>
+        <div className="hero text-white home-page-hero" style={{ backgroundImage: 'url("./images/home-hero.jpg")' }}>
           <div className="container">
             <div className="row">
               <div className="col-md-6"  >
