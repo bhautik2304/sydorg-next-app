@@ -1,6 +1,6 @@
 import Script from 'next/script'
 import Image from "next/image";
-import { TestimonialSlider } from '@/components';
+import { TestimonialSlider, Conter } from '@/components';
 
 
 export default function Home() {
@@ -10,13 +10,19 @@ export default function Home() {
         <div className="hero text-white" style={{ backgroundImage: 'url("./images/home-hero.jpg")' }}>
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
-                <h2>Providing advanced software solutions for the automation of Air Traffic Control </h2>
+              <div className="col-md-6"  >
+                <h2 style={{
+                  marginTop: "100px"
+                }} >Providing advanced software solutions for the automation of Air Traffic Control </h2>
                 <p>Sydorg Technologies Private Limited is at the forefront of developing intelligent automation
                   solutions that contribute to the modernization and optimization of ATC towers worldwide.</p>
                 <button className="secondary-button">Watch Video <i className="fa-regular fa-circle-play" /></button>
               </div>
               <div className="col-md-6">
+                <iframe style={{
+                  height: 700,
+                  width: "100%"
+                }} src="https://lottie.host/embed/69da3e52-cd32-416b-8637-74861004fc00/yfns1KmoKz.json"></iframe>
               </div>
             </div>
           </div>
@@ -155,29 +161,10 @@ export default function Home() {
             <img src="./images//testimonial-bg.png" className="w-100" alt="testimonial background" />
           </div>
         </div>
-        <div className="container text-center achievements-section">
-          <h2>Our <span>Achievements</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-          <div className="d-flex text-center justify-content-between total-record">
-            <div>
-              <b>+200M</b>
-              <p>Humans impacted</p>
-            </div>
-            <div>
-              <b>50k</b>
-              <p>Collaborators</p>
-            </div>
-            <div>
-              <b>370k</b>
-              <p>Assisted communities</p>
-            </div>
-            <div>
-              <b>100+</b>
-              <p>Donations</p>
-            </div>
-          </div>
-        </div>
+
+        <Conter />
+
+
         <div className="primary-background blog-section">
           <div className="container">
             <h2 className="text-center">Stay updated with our Latest <b>Blogs</b></h2>
