@@ -162,7 +162,9 @@ export default function Home() {
           </div>
         </div>
 
-        <Conter />
+        <div className='container-fluid' >
+          <Conter />
+        </div>
 
 
         <div className="primary-background blog-section">

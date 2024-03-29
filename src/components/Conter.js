@@ -9,7 +9,7 @@ function Conter() {
                 <h2>Our <span>Achievements</span></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                     Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-                <div className="d-flex text-center justify-content-between total-record">
+                <div className="d-flex text-center justify-content-between">
                     <div>
                         <b>+ <CountUp start={0} end={200} duration={10} delay={3} />M</b>
                         <p>Humans impacted</p>

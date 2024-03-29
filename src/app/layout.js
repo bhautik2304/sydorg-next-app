@@ -2,7 +2,7 @@ import { Footer, Navbar } from "@/components";
 // import { Inter } from "next/font/google";
 import Head from 'next/head'
 import Script from 'next/script'
- 
+
 import './globals.css'
 import './font.css'
 
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <link href="/css/style.css" rel="stylesheet"></link>
         <link href="/css/font.css" rel="stylesheet"></link>
       </head>
-      <body>
+      <body  >
         <Navbar />
         {children}
         <Footer />

@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,8 +16,12 @@ function TestimonialSlider() {
             <Swiper
                 // className='owl-theme'
                 loop={true}
-                modules={[Navigation]}
+                modules={[Navigation, Autoplay]}
                 spaceBetween={50}
+                autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                }}
                 breakpoints={{
                     400: {
                         slidesPerView: 1
@@ -33,10 +37,10 @@ function TestimonialSlider() {
             >
                 <SwiperSlide>
                     <div className="slider-card bg-light p-3" style={{
-                        borderTopRightRadius:40,
-                        borderTopLeftRadius:10,
-                        borderBottomLeftRadius:40,
-                        borderLeftLeftRadius:10,
+                        borderTopRightRadius: 40,
+                        borderTopLeftRadius: 10,
+                        borderBottomLeftRadius: 40,
+                        borderLeftLeftRadius: 10,
                     }} >
                         <div className='row' >
                             <div className="col-4" >
@@ -59,10 +63,10 @@ function TestimonialSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slider-card bg-light p-3" style={{
-                        borderTopRightRadius:40,
-                        borderTopLeftRadius:10,
-                        borderBottomLeftRadius:40,
-                        borderLeftLeftRadius:10,
+                        borderTopRightRadius: 40,
+                        borderTopLeftRadius: 10,
+                        borderBottomLeftRadius: 40,
+                        borderLeftLeftRadius: 10,
                     }} >
                         <div className='row' >
                             <div className="col-4" >
@@ -86,10 +90,10 @@ function TestimonialSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slider-card bg-light p-3" style={{
-                        borderTopRightRadius:40,
-                        borderTopLeftRadius:10,
-                        borderBottomLeftRadius:40,
-                        borderLeftLeftRadius:10,
+                        borderTopRightRadius: 40,
+                        borderTopLeftRadius: 10,
+                        borderBottomLeftRadius: 40,
+                        borderLeftLeftRadius: 10,
                     }} >
                         <div className='row' >
                             <div className="col-4" >
@@ -112,10 +116,10 @@ function TestimonialSlider() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slider-card bg-light p-3" style={{
-                        borderTopRightRadius:40,
-                        borderTopLeftRadius:10,
-                        borderBottomLeftRadius:40,
-                        borderLeftLeftRadius:10,
+                        borderTopRightRadius: 40,
+                        borderTopLeftRadius: 10,
+                        borderBottomLeftRadius: 40,
+                        borderLeftLeftRadius: 10,
                     }} >
                         <div className='row' >
                             <div className="col-4" >
