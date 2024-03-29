@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <link href="/css/style.css" rel="stylesheet"></link>
         <link href="/css/font.css" rel="stylesheet"></link>
       </head>
-      <body  >
+      <body>
         <Navbar />
         {children}
         <Footer />

@@ -27,7 +27,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="py-5 hero second-hero our-services" style={{ backgroundImage: 'url("./images/Airplane-on-White-Background-Stock-Image-Image-of-gear-bright-3201317.png")' }}>
+
+        {/* Blog */}
+        <div className="py-5 hero second-hero our-services">
           <div className="container">
             <h2>Our flagship software solutions are designed to automate various aspects</h2>
             <p>Leveraging state-of-the-art technologies, Sydorg aims to enhance the efficiency, safety, and overall
